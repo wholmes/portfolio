@@ -83,6 +83,18 @@ chmod 755 /path/to/your/site
 
 **IMPORTANT**: Change the default password immediately after first login!
 
+## Deploying to Namecheap
+
+For detailed deployment instructions to Namecheap shared hosting, see [DEPLOYMENT.md](DEPLOYMENT.md).
+
+Quick deployment checklist:
+- Create MySQL database in cPanel
+- Upload files via FTP or File Manager
+- Configure `config.php` with database credentials
+- Import `database.sql` via phpMyAdmin
+- Enable SSL/HTTPS
+- Change default admin password
+
 ## Changing Your Password
 
 To change the admin password:
@@ -113,9 +125,11 @@ portfolio-site/
 ├── config.example.php   # Configuration template
 ├── styles.css           # All styling
 ├── database.sql         # Database schema and initial data
+├── .htaccess            # Apache configuration & security
 ├── .gitignore           # Git ignore rules
 ├── LICENSE              # MIT License
 ├── CONTRIBUTING.md      # Contributing guidelines
+├── DEPLOYMENT.md        # Namecheap deployment guide
 └── README.md            # This file
 ```
 
