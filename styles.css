@@ -5,16 +5,22 @@
     box-sizing: border-box;
 }
 
+/* Light Mode Theme (Default) */
 :root {
     --primary-color: #2563eb;
     --primary-dark: #1e40af;
     --secondary-color: #64748b;
     --success-color: #10b981;
     --error-color: #ef4444;
+
+    /* Light mode backgrounds */
     --bg-light: #f8fafc;
     --bg-white: #ffffff;
-    --text-primary: #0f172a;
-    --text-secondary: #475569;
+
+    /* Light mode text colors */
+    --text-primary: #1e293b;
+    --text-secondary: #64748b;
+
     --border-color: #e2e8f0;
     --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
     --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
@@ -27,6 +33,15 @@ body {
     line-height: 1.6;
     color: var(--text-primary);
     background-color: var(--bg-light);
+}
+
+/* Headings use Space Grotesk font */
+h1, h2, h3, h4, h5, h6,
+.hero-title,
+.section-title,
+.project-title,
+.logo h1 {
+    font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
 .container {
@@ -211,12 +226,12 @@ body {
 
 .project-category {
     display: inline-block;
-    background-color: #dbeafe;
-    color: var(--primary-color);
-    padding: 0.25rem 0.75rem;
-    border-radius: 20px;
+    color: var(--text-secondary);
+    padding: 0;
     font-size: 0.875rem;
-    font-weight: 600;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
 }
 
 .project-card-body {
