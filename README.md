@@ -45,8 +45,11 @@ The site comes pre-loaded with your impressive portfolio:
 
 ### Step 2: Configure Database Connection
 
-1. Open `config.php`
-2. Update the database credentials:
+1. Copy `config.example.php` to `config.php`:
+   ```bash
+   cp config.example.php config.php
+   ```
+2. Open `config.php` and update the database credentials:
    ```php
    define('DB_HOST', 'localhost');
    define('DB_USER', 'your_username');
@@ -102,14 +105,18 @@ Or create a simple password change page (recommended for production).
 
 ```
 portfolio-site/
-├── index.php          # Main portfolio page
-├── login.php          # Login page
-├── admin.php          # Admin dashboard
-├── logout.php         # Logout script
-├── config.php         # Database configuration
-├── styles.css         # All styling
-├── database.sql       # Database schema and initial data
-└── README.md          # This file
+├── index.php            # Main portfolio page
+├── login.php            # Login page
+├── admin.php            # Admin dashboard
+├── logout.php           # Logout script
+├── config.php           # Database configuration (create from config.example.php)
+├── config.example.php   # Configuration template
+├── styles.css           # All styling
+├── database.sql         # Database schema and initial data
+├── .gitignore           # Git ignore rules
+├── LICENSE              # MIT License
+├── CONTRIBUTING.md      # Contributing guidelines
+└── README.md            # This file
 ```
 
 ## Customization
@@ -231,4 +238,3 @@ Consider adding:
 **Ready to showcase your work!** 🚀
 
 After setup, customize the content to match your brand and start impressing potential clients and employers.
-# portfolio

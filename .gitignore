@@ -1,0 +1,51 @@
+# Environment Configuration
+config.php
+.env
+.env.local
+
+# Database
+*.sql.gz
+database_backup/
+backups/
+
+# IDE and Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# PHP
+vendor/
+composer.phar
+composer.lock
+*.log
+
+# Temporary Files
+tmp/
+temp/
+cache/
+
+# Uploaded Files (optional - uncomment if you add file upload feature)
+# uploads/
+# images/uploads/
+
+# Session Files
+sessions/
+
+# OS Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Desktop.ini
+
+# Security
+*.pem
+*.key
+*.crt
+.htpasswd
