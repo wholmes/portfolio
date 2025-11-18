@@ -49,3 +49,18 @@ Desktop.ini
 *.key
 *.crt
 .htpasswd
+
+# Deployment & Hosting
+.cpanel/
+.well-known/
+error_log
+php_errors.log
+.ftpconfig
+sftp-config.json
+
+# Backup Files
+*.bak
+*.backup
+*.old
+*.orig
+*.save
